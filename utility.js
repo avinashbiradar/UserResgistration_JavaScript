@@ -1,8 +1,8 @@
 const readline = require('readline-sync')
-let NAME_PATTERN = new RegExp("^[A-Z]{1}[a-z]{2,}$");
-let EMAIL_PATTERN = new RegExp("^[a-zA-Z0-9]+([.][a-zA-Z0-9]+)?@[a-zA-Z0-9]+.[a-zA-Z]{2,4}([.][a-zA-Z]{2})?$");
+ let NAME_PATTERN = new RegExp("^[A-Z]{1}[a-z]{2,}$");
+ let EMAIL_PATTERN = new RegExp("^[a-zA-Z0-9]+([.][a-zA-Z0-9]+)?@[a-zA-Z0-9]+.[a-zA-Z]{2,4}([.][a-zA-Z]{2})?$");
  let PHONE_NUMBER_PATTERN = new RegExp("^([0-9]{2}[ ]+)?[0-9]{10}$");
- let PASSWORD_PATTERN = new RegExp("[a-zA-Z0-9]{8,40}");
+ let PASSWORD_PATTERN = new RegExp("(?=.*[0-9])(?=.*[A-Z]).{8,40}");
 class Utility {
    firstNameValidator=(firstname)=> {
      firstname = readline.question("Enter valid First name: ")
