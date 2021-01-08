@@ -10,5 +10,14 @@ class Utility {
           console.log("Invalid First Name");
         }
   }
+  lastNameValidator=(lastname)=> {
+    lastname = readline.question("Enter valid Last name: ")
+     if (NAME_PATTERN.test(lastname)) {
+        console.log("valid Last Name:",lastname);
+     }
+     else {
+         console.log("Invalid Last Name");
+       }
+ }
 }
 module.exports = new Utility();
