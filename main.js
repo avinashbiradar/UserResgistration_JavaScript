@@ -5,3 +5,4 @@ utility.firstNameValidator()
 utility.lastNameValidator();
 utility.emailValidator();
 utility.phoneValidator();
+utility.passwordValidator();
