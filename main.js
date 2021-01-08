@@ -4,3 +4,4 @@ console.log("Welcome to user-registration")
 utility.firstNameValidator()
 utility.lastNameValidator();
 utility.emailValidator();
+utility.phoneValidator();

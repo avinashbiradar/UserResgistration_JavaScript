@@ -30,7 +30,16 @@ class Utility {
         console.log("Invalid Email");
     }
   }
-  
+  phoneValidator=(phoneNumber)=>{
+      phoneNumber=readline.question("Enter valid Phone Number");
+      if (PHONE_NUMBER_PATTERN .test(phoneNumber)) {
+        console.log("valid Phone Number ",phoneNumber);
+    }
+    else {
+        console.log("Invalid Phone Number ");
+    }
+  }
+
  }
 
 
