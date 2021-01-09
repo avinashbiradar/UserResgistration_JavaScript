@@ -11,16 +11,18 @@ class Utility {
             }
             else {
                 console.log("Invalid First Name");
+                this.firstNameValidator();
                 }
         }
         lastNameValidator=(lastname)=> {
             lastname = readline.question("Enter valid Last name: ")
             if (NAME_PATTERN.test(lastname)) {
                 console.log("valid Last Name:",lastname);
-            }
+             }
             else {
                 console.log("Invalid Last Name");
-            }
+                this.lastNameValidator();
+                }
             }
         emailValidator=(email)=>{
             email = readline.question("Enter valid email : ");
@@ -29,6 +31,7 @@ class Utility {
             }
             else {
                 console.log("Invalid Email");
+                this. emailValidator();
             }
         }
         phoneValidator=(phoneNumber)=>{
@@ -38,6 +41,7 @@ class Utility {
             }
             else {
                 console.log("Invalid Phone Number ");
+                this. phoneValidator();
             }
         }
         passwordValidator(password) {
@@ -47,6 +51,7 @@ class Utility {
             }
             else {
                 console.log("Invalid Password");
+                this. passwordValidator();
             }
         }
 
